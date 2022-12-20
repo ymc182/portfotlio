@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { images } from "../../../constants";
+import { images, NavLinks } from "../../../constants";
 import "./NavBar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-const NavLinks = ["Home", "Projects", "Skills", "About"];
 
 export default function NavBar() {
 	const [toggle, setToggle] = useState(false);

@@ -2,7 +2,8 @@ import React from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
-export default function Header() {
+import AppWrapper from "../../Wrapper/AppWrapper";
+function Header() {
 	const scaleVariant = {
 		whileInView: {
 			scale: [0, 1],
@@ -12,7 +13,7 @@ export default function Header() {
 	};
 
 	return (
-		<div id="home" className="app__header app__flex ">
+		<div id="Home" className="app__header app__flex ">
 			<motion.div
 				whileInView={{ x: [-100, 0], opacity: [0, 1], transition: { duration: 1 } }}
 				className="app__header-info"
@@ -52,7 +53,7 @@ export default function Header() {
 				<img src={images.profile} alt="profile-pic" />
 			</motion.div>
 			<motion.div variants={scaleVariant} whileInView={scaleVariant.whileInView} className="app__header-circles">
-				{[images.cartel, images.near, images.neko].map((img, index) => {
+				{[images.cartel, images.near, images.sui].map((img, index) => {
 					return (
 						<div className="circle-cpm app__flex" key={`imgcircle-${index}`}>
 							<img src={img} alt="circle" />
@@ -63,3 +64,4 @@ export default function Header() {
 		</div>
 	);
 }
+export default AppWrapper(Header, "Home", "");

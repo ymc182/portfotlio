@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { Footer, NavBar } from "./components/Layout";
+import { Footer, NavBar } from "./components";
 import { Projects, Home, About, Skills, Header } from "./pages";
 
 function App() {
-	useEffect(() => {
+	/* 	useEffect(() => {
 		console.log("check");
 		var docWidth = document.documentElement.offsetWidth;
 
@@ -12,16 +12,16 @@ function App() {
 				console.log(el, el.offsetWidth, ">", docWidth);
 			}
 		});
-	}, []);
+	}, []); */
 
 	return (
 		<div>
 			<NavBar />
 			<Header />
+			<Projects />
 			<About />
-			{/* 			<Projects />
-			<Home />
-			<Skills />
+
+			{/* 	<Skills />
 
 			<Footer /> */}
 		</div>
