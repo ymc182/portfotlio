@@ -45,3 +45,28 @@
 		border-radius: 50%;
 	}
 }
+.app__projects-tag-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.app__projects-tag {
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: var(--bg-color);
+	color: #fff;
+	font-size: 0.8rem;
+	border: 2px solid var(--secondary-color);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: var(--secondary-color);
+		color: #fff;
+		border: 2px solid var(--secondary-color);
+	}
+}
+.app__projects-description {
+	text-align: center;
+}

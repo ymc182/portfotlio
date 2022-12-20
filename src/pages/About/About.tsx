@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 import useSanity from "../../hooks/useSanity";
 import { urlFor } from "../../lib/sanity";
 import AppWrapper from "../../Wrapper/AppWrapper";
-
-type IAboutSchema = {
-	title: string;
-	imgUrl: string;
-	description: string;
-};
+import { IAboutSchema } from "../../constants/types";
 
 function About() {
 	const { about } = useSanity();
@@ -54,4 +49,4 @@ function About() {
 	);
 }
 
-export default AppWrapper(About, "Skills", "");
+export default AppWrapper(About, "Experience", "");
