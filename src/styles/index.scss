@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+	--primary-color: #efefef;
+	--secondary-color: rgb(51, 200, 193);
+	--tertiary-color: rgb(93, 203, 228);
+	--contrast-color: #252525;
+	--primary-font: "DM Sans", sans-serif;
+	--primary-font-size: 100%;
+	--bg-color: #121212;
+	--image-padding: 1rem;
+	--navbar-drawer-bg-color: rgba(0, 0, 0, 0.9);
+	//navbar
+	--navbar-bg-color: rgb(55, 55, 55, 0.2);
+	--navbar-border-color: rgba(71, 71, 71, 0.18);
+	--navbar-blur: 10px;
+	--navbar-z-index: 100;
+	--navbar-logo-width: 3.5rem;
+	--navbar-logo-height: 3.5rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "DM Sans", sans-serif;
+	color: var(--primary-color);
+
+	caret-color: transparent;
+}
+
+body {
+	background: var(--bg-color);
+}
+.head-text {
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 1rem 0;
+	text-align: center;
+}
+.p-text {
+	font-size: 100%;
+	font-weight: 400;
+}
+.app__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+span {
+	color: var(--secondary-color);
+}
