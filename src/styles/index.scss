@@ -43,9 +43,14 @@ body {
 }
 .app__flex {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 span {
 	color: var(--secondary-color);
+}
+.app_wrapper {
+	padding: 0;
+
+	.copyright {
+		display: none;
+	}
 }

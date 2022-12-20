@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import { motion } from "framer-motion";
-import { images } from "../../../constants";
+import { images } from "../../constants";
 export default function Header() {
 	const scaleVariant = {
 		whileInView: {

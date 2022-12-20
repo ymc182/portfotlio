@@ -1,5 +1,5 @@
-import { Footer, Header, NavBar } from "./components/Layout";
-import { Projects, Home, About, Skills } from "./pages";
+import { Footer, NavBar } from "./components/Layout";
+import { Projects, Home, About, Skills, Header } from "./pages";
 
 function App() {
 	return (
