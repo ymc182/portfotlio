@@ -51,7 +51,6 @@ export default function Header() {
 				/>
 				<img src={images.profile} alt="profile-pic" />
 			</motion.div>
-
 			<motion.div variants={scaleVariant} whileInView={scaleVariant.whileInView} className="app__header-circles">
 				{[images.cartel, images.near, images.neko].map((img, index) => {
 					return (

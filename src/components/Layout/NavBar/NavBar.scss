@@ -1,5 +1,5 @@
 .app__navbar {
-	width: 100%;
+	width: 100vw;
 
 	display: flex;
 	align-items: center;
@@ -9,7 +9,6 @@
 	backdrop-filter: blur(var(--navbar-blur));
 	--webkit-backdrop-filter: blur(var(--navbar-blur));
 
-	border: 1px solid var(--navbar-border-color);
 	position: fixed;
 	z-index: var(--navbar-z-index);
 }
