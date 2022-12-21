@@ -5,6 +5,7 @@ import useSanity from "../../hooks/useSanity";
 import { urlFor } from "../../lib/sanity";
 import AppWrapper from "../../Wrapper/AppWrapper";
 import { IAboutSchema } from "../../constants/types";
+import { DevIcons } from "../../constants";
 
 function About() {
 	const { about } = useSanity();
@@ -44,9 +45,47 @@ function About() {
 						);
 					})}
 				</div>
+				<SkillsSection />
 			</div>
 		</>
 	);
 }
 
 export default AppWrapper(About, "Experience", "");
+
+function SkillsSection() {
+	return (
+		<div className="app__skills">
+			<h2 className="head-text">
+				<span>Skills</span>
+			</h2>
+			<div className="app__skills-list">
+				{DevIcons.map((icon, index) => {
+					return (
+						<motion.div
+							initial={{
+								opacity: 0,
+							}}
+							whileInView={{
+								y: [-10, 0],
+								opacity: 1,
+							}}
+							whileHover={{
+								scale: 1.1,
+							}}
+							transition={{
+								delay: index * 0.1,
+								duration: 0.5,
+								type: "tween",
+							}}
+							className="app__skills-item"
+							key={`${icon}-${index}`}
+						>
+							<i className={icon} />
+						</motion.div>
+					);
+				})}
+			</div>
+		</div>
+	);
+}
